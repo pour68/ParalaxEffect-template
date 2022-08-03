@@ -54,15 +54,15 @@ body {
     pointer-events: none;
 }
 
+#road {
+    z-index: 2;
+}
+
 #text {
     position: relative;
     color: #fff;
     font-size: 10vmax;
     z-index: 1;
-}
-
-#road {
-    z-index: 2;
 }
 
 .main {
@@ -79,4 +79,10 @@ body {
 
 .main p {
     padding: 0 0 0.25rem 0;
+}
+
+@media (max-width: 768px) {
+    #text {
+        font-size: 5vmax;
+    }
 }
